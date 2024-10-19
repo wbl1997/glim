@@ -1,5 +1,13 @@
 ![GLIM](docs/assets/logo2.png "GLIM Logo")
 
+## docker run
+
+docker run   -it   --rm   --net=host   --ipc=host   --pid=host   -e=DISPLAY   -e=ROS_DOMAIN_ID   -v /home/wbl/code/my_project/GLIM_ws/src/glim/config:/glim/config   koide3/glim_ros1:noetic
+
+docker exec -it 34d78e6e8b5e bash
+
+rosrun glim_ros glim_rosnode --ros-args -p config_path:=/glim/config
+
 ## Introduction
 
 **GLIM** is a versatile and extensible range-based 3D mapping framework.
