@@ -2,11 +2,11 @@
 
 ## docker run
 
-docker run   -it   --rm   --net=host   --ipc=host   --pid=host   -e=DISPLAY   -e=ROS_DOMAIN_ID   -v /home/wbl/code/my_project/GLIM_ws/src/glim/config:/glim/config   koide3/glim_ros1:noetic
+docker run -it --rm --net=host --ipc=host --pid=host -e=DISPLAY -e=ROS_DOMAIN_ID -v /home/wbl/code/my_project/GLIM_ws/src:/root/catkin_ws/src koide3/glim_ros1:noetic
 
 docker exec -it 34d78e6e8b5e bash
 
-rosrun glim_ros glim_rosnode --ros-args -p config_path:=/glim/config
+rosrun glim_ros glim_rosnode
 
 ## Introduction
 

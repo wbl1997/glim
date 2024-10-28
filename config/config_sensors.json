@@ -48,15 +48,7 @@
     "imu_bias_noise": 0.001,
     // LiDAR config
     "global_shutter_lidar": false,
-    "T_lidar_imu": [
-      0.006,
-      -0.012,
-      0.008,
-      0.0,
-      0.0,
-      0.0,
-      1.0
-    ],
+    "T_lidar_imu": [-0.006, 0.012, -0.008, 0, 0, 0, 1],
     // LiDAR per-point time settings
     "autoconf_perpoint_times": true,
     "autoconf_prefer_frame_time": false,
